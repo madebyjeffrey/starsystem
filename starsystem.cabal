@@ -1,0 +1,23 @@
+Name:                starsystem 
+Version:             0.1
+License:             GPL-3
+Author:              Jeffrey Drake
+Maintainer:          iaefai@me.com
+Category:            Simulation
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Executable starsystem
+  -- .hs or .lhs file containing the Main module.
+  Main-is: starsystem.lhs            
+  c-sources: unbundled.c
+  
+  -- Packages needed in order to build this package.
+  Build-depends: GLFW, OpenGL, base>=4
+  
+  -- Modules not exported by this package.
+  -- Other-modules:       
+  
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- Build-tools:         
+  
